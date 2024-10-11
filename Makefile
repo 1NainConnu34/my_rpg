@@ -23,8 +23,4 @@ clean :
 fclean : clean
 	$(RM) $(TARGET)
 
-coding_style : fclean
-	~/Documents/coding-style-checker/coding-style.sh . ..
-	cat ../coding-style-reports.log
-
 re : fclean all
